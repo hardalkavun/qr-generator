@@ -44,9 +44,7 @@ public class QRGenerator extends JFrame {
     }
 
     public static void main(String[] args) {
-            QRGenerator newQR = new QRGenerator();
-            newQR.setVisible(true);
-
+           
 
 
     }
