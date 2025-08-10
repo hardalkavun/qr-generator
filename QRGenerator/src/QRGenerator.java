@@ -15,6 +15,8 @@ public class QRGenerator extends JFrame {
         frame.setBounds(100, 100, 450, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
+                frame.setResizable(false);      //  hocam önemli
+
 
         JTextField editTextArea = new JTextField();
         editTextArea.setBounds(30, 30, 380, 30);
