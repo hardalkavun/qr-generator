@@ -45,7 +45,7 @@ public class QRGenerator extends JFrame {
 
     public static void main(String[] args) {
            
-
+                    // try forming an object here it does not work properly now
 
     }
 }
