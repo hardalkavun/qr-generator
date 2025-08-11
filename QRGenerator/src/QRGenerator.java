@@ -1,11 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.client.j2se.MatrixToImageWriter;
+import com.google.zxing.common.BitMatrix;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class QRGenerator extends JFrame {
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 
-    public static JTextArea editTextArea = new JTextArea("Type Here!");
+public class QRGenerator extends JFrame{
+
+    public static JTextArea editTextArea = new JTextArea();     //linki aldığımız yer
 
 
     public QRGenerator() {
@@ -15,7 +23,7 @@ public class QRGenerator extends JFrame {
         frame.setBounds(100, 100, 450, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
-                frame.setResizable(false);      //  hocam önemli
+        frame.setResizable(false);      // hocam önemli tam ekran mevzusu
 
 
         JTextField editTextArea = new JTextField();
@@ -28,11 +36,22 @@ public class QRGenerator extends JFrame {
         generateButton.setBounds(150, 80, 150, 40);
 
 
+     
+
 
         generateButton.addActionListener(e -> {
             String text = editTextArea.getText();
-            System.out.println("Girilen metin: " + text);
-            // qr thing
+
+            if (text.isEmpty()) {
+                //JOptionPane test = new JOptionPane();     bu olmuyo böyle
+                //test.setMessage("hata");
+                JOptionPane.showMessageDialog(this,"Link Girin!");
+            }
+            else {
+                
+
+            }
+
         });
 
         frame.add(generateButton);
@@ -45,9 +64,12 @@ public class QRGenerator extends JFrame {
 
     }
 
+
     public static void main(String[] args) {
-           
-                    // try forming an object here it does not work properly now
+            QRGenerator newQR = new QRGenerator();
+
+
+
 
     }
 }
