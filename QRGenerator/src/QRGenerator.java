@@ -15,6 +15,10 @@ public class QRGenerator extends JFrame{
 
     public static JTextArea editTextArea = new JTextArea();     //linki aldığımız yer
 
+    
+    public static void QrGenerate(String data, String filePath, int width, int height){
+        // ekle
+    }
 
     public QRGenerator() {
 
