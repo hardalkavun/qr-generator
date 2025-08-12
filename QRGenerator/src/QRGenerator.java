@@ -56,7 +56,7 @@ public class QRGenerator extends JFrame{
 
                 //generateqr code here
 
-                QrGenerate("link buraya","link konum",5,5);
+                QrGenerate(text,"link konum",5,5);
 
 
 
