@@ -47,8 +47,14 @@ public class QRGenerator extends JFrame{
                 //test.setMessage("hata");
                 JOptionPane.showMessageDialog(this,"Link Girin!");
             }
-            else {
-                
+          else {
+              //  String filePath = "qrcode.png"; bu ne işe yarıyo tam çözemedim        muhtemeln önce qr kodu oluşturup bir yere kaydediyo ardından ekrana gösteriyo
+
+                //generateqr code here
+
+                QrGenerate("link buraya","link konum",5,5);
+
+
 
             }
 
