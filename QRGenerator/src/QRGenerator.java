@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class QRGenerator extends JFrame{
 
-    public static JTextArea editTextArea = new JTextArea();     //linki aldığımız yer
+    public static JTextArea editTextArea = new JTextArea();     //linki aldığımız yer.
 
 
 
