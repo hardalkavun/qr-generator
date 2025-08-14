@@ -45,7 +45,7 @@ public class QRGenerator extends JFrame{
             }
 
             else {
-              //  String filePath = "qrcode.png"; bu ne işe yarıyo tam çözemedim        muhtemeln önce qr kodu oluşturup bir yere kaydediyo ardından ekrana gösteriyo
+              //  String filePath = "qrcode.png"; bu ne işe yarıyo tam çözemedim        muhtemeln önce qr kodu oluşturup bir yere kaydediyo ardından ekrana gösteriyo.
 
                 //generateqr code here
 
