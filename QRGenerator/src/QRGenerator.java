@@ -15,7 +15,7 @@ public class QRGenerator extends JFrame{
     }
 
     public QRGenerator() {
-//
+//burdan itibaren
         JFrame frame = new JFrame();
         frame.setTitle("QR Generator");
         frame.setBounds(750, 340, 450, 300);
