@@ -25,7 +25,7 @@ Usage
 
 3-Add ZXing library to your project dependencies.
 
-4-Run the main class QRCodeGenerator.java in your preffered comp.
+4-Run the main class QRCodeGenerator.java in your preffered compiler.
 
 5-Enter the text or URL you want to encode.
 
