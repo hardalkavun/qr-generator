@@ -35,7 +35,9 @@ public class QRGenerator extends JFrame{
 
 
                 qrImageLabel = new JLabel("QR code will appear here");
-                qrImageLabel.setHorizontalAlignment(SwingConstants.CENTER);
+                qrImageLabel.setHorizontalAlignment(SwingConstants.CENTER);        //qr burda gözükcek
+                qrImageLabel.setBounds(100, 140, 250, 150);
+                frame.add(qrImageLabel);
 
         generateButton.addActionListener(e -> {
             String text = editTextArea.getText();
